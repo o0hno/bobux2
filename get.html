@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOBUX</title>
+    <link rel="stylesheet" href="../css/get.css">
+    <link rel="shortcut icon" href="../img/af6765ffbghh666.png" type="x-icon">
+</head>
+<body>
+    <div class="from">
+        <h1 class="textrobux">Введите никнейм в роблоксе</h1>
+        <div class="input-form">
+            <form action="index_video.html" method="get" novalidate>
+                <input class="Nametext" type="text" name="username" placeholder="Никнейм" required>
+                <input class="Button" type="submit" name="" value="Получить" disabled>
+                
+            </form>
+        </div>
+    </div>
+    <script>
+        const input = document.querySelector(".Nametext");
+        const button = document.querySelector(".Button");
+        input.addEventListener("input", function() {
+            if (input.value.trim() !== "") {
+                button.disabled = false;
+            } else {
+                button.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
