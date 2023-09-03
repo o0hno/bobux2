@@ -9,16 +9,15 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteEngine On
 
-# Удаление .html расширения
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-# Перенаправление для языков ru и en без .html
+
 RewriteRule ^ru$ ru.html [L]
 RewriteRule ^home$ home.html [L]
 
-# Отключение автоматического добавления слеша
 DirectorySlash Off
 
 ErrorDocument 403 /403.html
