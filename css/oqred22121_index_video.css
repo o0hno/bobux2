@@ -1,0 +1,48 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* Стили для видео */
+.video-bg {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Центрирование видео по горизонтали */
+    display: block;
+}
+
+/* Стили для текста */
+.text-container {
+    max-width: 500px; /* Максимальная ширина контейнера текста */
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+    padding: 20px;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    background-color: #252525;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #f5eeee;
+    margin: 0 0 15px; /* Отступ снизу между параграфами */
+}
+
+.text-xs {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
