@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/34928rhuwefjd_indexget.css">
+    <link rel="shortcut icon" href="../img/af6765ffbghh666.png" type="x-icon">
+    <title>Bobux</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="textrobux">Username in Roblox</h1>
+        <div class="input-form">
+            <form action="../en/bobux.html" method="get" novalidate>
+                <input class="Nametext" type="text" name="username" placeholder="Username" required>
+                <input class="Button" type="submit" value="Get" disabled>
+            </form>
+        </div>
+    </div>
+
+    <div class="warning">
+        <div class="text-xs opacity-50">
+            We never ask for passwords. Do not enter your password on suspicious sites. Just enter your username.
+        </div>
+    </div>
+
+    <script>
+        const input = document.querySelector(".Nametext");
+        const button = document.querySelector(".Button");
+        input.addEventListener("input", function() {
+            if (input.value.trim() !== "") {
+                button.disabled = false;
+            } else {
+                button.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
