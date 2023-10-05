@@ -1,53 +1,214 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 
-}
-
-div {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px 15px;
-}
+@import"https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Edu+VIC+WA+NT+Beginner:wght@400;600;700&family=Fredoka+One&family=Inter:wght@200;400;500;800&family=Kaushan+Script&display=swap";
 
 body {
-    background-color: #191919;
-    color: #fff;
-    height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right 0%;
-}
 
-video {
-    width: 100%;
-    max-width: 800px; /* максимальная ширина видео */
-    height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-    /* настройки для мобильных устройств */
-    video {
-    max-width: 100%;
-    }
-}
-
-
-.video-bg {
-    margin: auto;
-    display: flex;
-    justify-content: center;
+  background-color: #2a2a2a
 
 }
 
-.text {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    font-size: 250%;
+
+
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-feature-settings: normal
 }
 
+.group-2 {
+  position: absolute;
+  top: 70%;
+  left: -87%;
+  transform: translate(-50%, -50%);
+}
+
+.group-3 {
+  position: absolute;
+  top: 48%;
+  left: 328%;
+  transform: translate(-50%, -50%);
+}
+
+.group-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+
+}
+
+
+.row {
+  position: relative;
+  width: 370px;
+  height: 350px;
+  background-color: rgba(41, 40, 40, 0.445);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Тень для выделения текста */
+  border-radius: 32px;
+}
+
+
+
+.text-h1 {
+  color: rgba(240, 248, 255, 0.781);
+  font-size: 140%;
+  font-family:  sans-serif;
+  position: absolute;
+  white-space: nowrap;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-p {
+  opacity: 0.3;
+  color: white;
+  font-size: 130%; /* Увеличение размера шрифта */      
+  padding-top: 0.7rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+.ponda {
+  opacity: 0.3;
+  color: #ffffff25;
+  position: relative;
+  top: 30%;
+  left: -91%;
+  transform: translate(-50%, 340%);
+}
+
+.text-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+@keyframes bobux-text {
+  0% {
+      background-color: #00c5dd
+  }
+  50% {
+      background-color: #c11c66
+  }
+  to {
+      background-color: #fc7940
+  }
+}
+
+.bobux-main {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bobux-text {
+  position: relative;
+  z-index: 0;
+  font-size: 3rem;
+  line-height: 2;
+  color: white;
+
+}
+
+.bobux-text:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 5%;
+  left: -25%;
+  width: 150%;
+  height: 100%;
+  opacity: 60%;
+  animation: bobux-text 5s linear 0s infinite alternate;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  filter: blur(3rem)
+}
+
+
+
+
+.glow-on-hover {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #2a2a2a;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 0.5rem;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #00c5dd, #c11c66, #fc7940);
+  position: absolute;
+  top:-2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #2a2a2a
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2a2a2a;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.ponda1 {
+    opacity: 0.3;
+    color: #ffffff25;
+    position: relative;
+    top: 50%;
+    left: -91%;
+    transform: translate(-50%, 340%);
+  }
+  
