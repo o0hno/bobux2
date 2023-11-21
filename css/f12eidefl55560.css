@@ -118,10 +118,19 @@ html {
   position: relative;
   z-index: 0;
   font-size: 3rem;
-  line-height: 2;
+  line-height: 1;
   color: white;
 
 }
+
+.bobux-textp {
+
+  font-size: 1.5rem;
+
+  color: white;
+
+}
+
 
 .bobux-text:before {
   content: "";
