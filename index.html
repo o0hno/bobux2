@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .message {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <script>
-        var userLanguage = navigator.language || navigator.userLanguage;
+    <div class="container">
+        <div class="message">
+            <h1>The site is closed forever</h1>
 
-        if (userLanguage.startsWith("ru") || userLanguage.startsWith("uk")) {
-            window.location.href = "/ru";
-        } else {
-            window.location.href = "/en";
-        }
-    </script>
-
-    
+            <p>We have decided to close the site. thank for interest!</p>
+        </div>
+    </div>
 </body>
 </html>
