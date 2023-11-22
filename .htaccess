@@ -1,6 +1,11 @@
 ErrorDocument 404 /404.html
 
+# Перенаправление на страницу на русском для русскоязычных пользователей
+RewriteCond %{HTTP:Accept-Language} ^ru [NC]
+RewriteRule ^(.*)$ /ru.html [L,R=301]
 
+# Перенаправление на страницу на английском для остальных пользователей
+RewriteRule ^(.*)$ /en.html [L,R=301]
 
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$ https://bobux.site/$1 [R=301,L,NE]
