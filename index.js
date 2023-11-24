@@ -29,7 +29,7 @@ app.get('/gif', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'gif'));
 });
 
-app.post('/upload', (req, res) => {
+app.post('/', (req, res) => {
   const gifName = req.body.gifName;
 
   if (!req.files || Object.keys(req.files).length === 0) {
