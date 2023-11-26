@@ -6,6 +6,22 @@
     <link rel="icon" href="/uh.ico" type="image/x-icon">
     <title>hi</title>
     <style>
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #181818;
@@ -15,6 +31,8 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         .container {
