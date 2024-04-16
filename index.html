@@ -10,15 +10,29 @@
 <body>
     <div class="background">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-            <div class="icon" ondragstart="return false;">
+            <div class="icon">
                 <img src="bobux.png" height="38"> 
             </div>
             <div class="message">
                 <a href="https://bobux.site/video/a88g0r88848r.mp4">
                     <h1>Software that just works</h1>
                 </a>
-            </div>
+            </div
+            >
         </div>
      </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".draggable").forEach(function(img) {
+        img.addEventListener("mousedown", function(event) {
+            if (!img.classList.contains("icon")) {
+                event.preventDefault();
+            }
+        });
+    });
+});
+
+</script>
+
 </html>
